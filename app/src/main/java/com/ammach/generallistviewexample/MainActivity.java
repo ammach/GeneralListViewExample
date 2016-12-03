@@ -18,12 +18,42 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         listView= (ListView) findViewById(R.id.listView);
-        countriesAdapter=new CountriesAdapter(this,getData(),R.layout.row);
+
+        countriesAdapter=new CountriesAdapter(this,getData(),R.layout.row,R.id.loadItemsLayout_listView,this);
         listView.setAdapter(countriesAdapter);
+        listView.setOnScrollListener(countriesAdapter);
     }
 
     private List<Country> getData() {
         List<Country> countries=new ArrayList<>();
+        countries.add(new Country("MAROC"));
+        countries.add(new Country("FRANCE"));
+        countries.add(new Country("USA"));
+        countries.add(new Country("ESPAGNE"));
+        countries.add(new Country("MAROC"));
+        countries.add(new Country("FRANCE"));
+        countries.add(new Country("USA"));
+        countries.add(new Country("ESPAGNE"));
+        countries.add(new Country("MAROC"));
+        countries.add(new Country("FRANCE"));
+        countries.add(new Country("USA"));
+        countries.add(new Country("ESPAGNE"));
+        countries.add(new Country("MAROC"));
+        countries.add(new Country("FRANCE"));
+        countries.add(new Country("USA"));
+        countries.add(new Country("ESPAGNE"));
+        countries.add(new Country("MAROC"));
+        countries.add(new Country("FRANCE"));
+        countries.add(new Country("USA"));
+        countries.add(new Country("ESPAGNE"));
+        countries.add(new Country("MAROC"));
+        countries.add(new Country("FRANCE"));
+        countries.add(new Country("USA"));
+        countries.add(new Country("ESPAGNE"));
+        countries.add(new Country("MAROC"));
+        countries.add(new Country("FRANCE"));
+        countries.add(new Country("USA"));
+        countries.add(new Country("ESPAGNE"));
         countries.add(new Country("MAROC"));
         countries.add(new Country("FRANCE"));
         countries.add(new Country("USA"));
